@@ -1,0 +1,30 @@
+2024-04-03T20:45:46.122+07:00  INFO 5600 --- [Session1] [main] com.ra.api.Session2Application           : Starting Session2Application using Java 17.0.10 with PID 5600 (D:\Rikkei\RA_FUKUOKA-JV230929\SpringBoot\SourceCode\Session2\build\classes\java\main started by light in D:\Rikkei\RA_FUKUOKA-JV230929\SpringBoot\SourceCode\Session2)
+2024-04-03T20:45:46.127+07:00  INFO 5600 --- [Session1] [main] com.ra.api.Session2Application           : No active profile set, falling back to 1 default profile: "default"
+2024-04-03T20:45:47.099+07:00  INFO 5600 --- [Session1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-03T20:45:47.246+07:00  INFO 5600 --- [Session1] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 1 JPA repository interface.
+2024-04-03T20:45:48.120+07:00  INFO 5600 --- [Session1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 6789 (http)
+2024-04-03T20:45:48.136+07:00  INFO 5600 --- [Session1] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-03T20:45:48.137+07:00  INFO 5600 --- [Session1] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-03T20:45:48.227+07:00  INFO 5600 --- [Session1] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2024-04-03T20:45:48.227+07:00  INFO 5600 --- [Session1] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2029 ms
+2024-04-03T20:45:48.464+07:00  INFO 5600 --- [Session1] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-03T20:45:48.560+07:00  INFO 5600 --- [Session1] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-03T20:45:48.624+07:00  INFO 5600 --- [Session1] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-03T20:45:49.016+07:00  INFO 5600 --- [Session1] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-03T20:45:49.052+07:00  INFO 5600 --- [Session1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-03T20:45:49.308+07:00  INFO 5600 --- [Session1] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bd93bc3
+2024-04-03T20:45:49.316+07:00  INFO 5600 --- [Session1] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-03T20:45:49.441+07:00  WARN 5600 --- [Session1] [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.0 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2024-04-03T20:45:49.453+07:00  WARN 5600 --- [Session1] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-03T20:45:50.885+07:00  INFO 5600 --- [Session1] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-03T20:45:50.894+07:00  INFO 5600 --- [Session1] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T20:45:51.312+07:00  WARN 5600 --- [Session1] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-03T20:45:51.857+07:00  INFO 5600 --- [Session1] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 6789 (http) with context path '/api'
+2024-04-03T20:45:51.869+07:00  INFO 5600 --- [Session1] [main] com.ra.api.Session2Application           : Started Session2Application in 6.534 seconds (process running for 7.874)
+2024-04-03T20:45:57.727+07:00  INFO 5600 --- [Session1] [http-nio-6789-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-03T20:45:57.727+07:00  INFO 5600 --- [Session1] [http-nio-6789-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-03T20:45:57.729+07:00  INFO 5600 --- [Session1] [http-nio-6789-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-04-03T20:45:57.862+07:00  INFO 5600 --- [Session1] [http-nio-6789-exec-1] c.ra.api.controller.ProductsController   : ProductsController get with request key=null, batch=1
+2024-04-03T20:47:33.736+07:00  INFO 5600 --- [Session1] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-03T20:47:33.741+07:00  INFO 5600 --- [Session1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-03T20:47:33.751+07:00  INFO 5600 --- [Session1] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

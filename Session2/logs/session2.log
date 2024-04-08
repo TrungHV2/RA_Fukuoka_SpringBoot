@@ -470,3 +470,7 @@ java.lang.NullPointerException: Cannot invoke "com.ra.api.exception.ErrorMessage
 [2024-04-03T21:32:51.511] [org.springframework.web.servlet.FrameworkServlet] [http-nio-6789-exec-1] [532] [INFO ] Initializing Servlet 'dispatcherServlet'
 [2024-04-03T21:32:51.522] [org.springframework.web.servlet.FrameworkServlet] [http-nio-6789-exec-1] [554] [INFO ] Completed initialization in 8 ms
 [2024-04-03T21:32:51.682] [com.ra.api.controller.ProductsController] [http-nio-6789-exec-1] [26] [INFO ] ProductsController get with request key=null, batch=1
+[2024-04-03T21:59:55.600] [com.zaxxer.hikari.pool.HikariPool$HouseKeeper] [HikariPool-1 housekeeper] [804] [WARN ] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m10s446ms244µs300ns).
+[2024-04-03T22:04:45.761] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [SpringApplicationShutdownHook] [650] [INFO ] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-04-03T22:04:45.828] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2024-04-03T22:04:45.852] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,11 @@
+server:
+  port: 6789
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: client_Id_google
+            clientSecret: clientSecret_google
+            redirect-uri: http://localhost:6789/login/oauth2/code/google

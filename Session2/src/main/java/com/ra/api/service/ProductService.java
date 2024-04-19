@@ -7,4 +7,5 @@ import java.util.List;
 public interface ProductService {
     List<ProductEntity> findByKey(String key, Integer batch);
     List<ProductEntity> findByExample(ProductEntity productEntity);
+    ProductEntity add(ProductEntity entity);
 }

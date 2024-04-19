@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+    mysql:
+        image: mysql:latest
+        enviroment:
+            MYSQL_ROOT_PASSWORD: Abc@123
+            MYSQL_DATABASE: store_manager
+        ports:
+            - "33061:33061"
+        networks:
+            - my-networks
+    test-app:
+        build: .
+        ports:
+            - "8080:6789"
+        enviroment:
+            SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/mydatabase
+            SPRING_DATASOURCE_USERNAME: root
+            SPRING_DATASOURCE_PASSWORD: password
+        depends_on:
+            - mysql
+        networks:
+            - my-networks
+networks:
+    my-networks:
+        driver: bridge

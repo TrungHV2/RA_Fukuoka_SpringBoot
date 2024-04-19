@@ -50,4 +50,9 @@ public class ProductServiceImpl implements ProductService {
 
         return productRepository.findAll(example);
     }
+
+    @Override
+    public ProductEntity add(ProductEntity entity) {
+        return productRepository.save(entity);
+    }
 }

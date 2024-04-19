@@ -8,15 +8,15 @@ spring:
   #Datasource
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/store_manager
-    username: root
-    password: ''
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/store_manager
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:''}
     hikari:
       maximum-pool-size: 15
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
